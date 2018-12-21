@@ -1,0 +1,27 @@
+* {
+  background-color: teal;
+
+}
+
+/*Nav bar*/
+nav {
+  background-color: white;
+  opacity: .5;
+}
+
+#navbar li {
+  text-decoration: none;
+  list-style: none;
+}
+
+/*Welcome Section*/
+#welcome-section {
+  text-align: center;
+}
+
+
+.social-icons {
+  max-width: 50px;
+
+
+}
