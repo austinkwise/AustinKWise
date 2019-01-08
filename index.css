@@ -1,27 +1,251 @@
-* {
-  background-color: teal;
-
-}
-
-/*Nav bar*/
-nav {
+body {
   background-color: white;
-  opacity: .5;
+  background: #222
+  font-color: gray;
+  border: 5px solid gray;
+}
+.maincontainer {
+  padding: 20px 20px;
 }
 
-#navbar li {
+.headers{
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  opacity: .65;
+}
+/*
+==========
+Nav bar
+==========
+*/
+.container {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: 0;
+}
+
+.nameheader{
   text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  opacity: .65;
+  display:inline-block;
+}
+
+.navtitle{
+  float: left;
+  clear: both;
+
+}
+
+header.top {
+  background: white;
+}
+header.top::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.navitems {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-/*Welcome Section*/
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  position: relative;
+}
+
+nav .nav-link {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav .nav-link:hover{
+  color: #000;
+}
+
+nav .nav-link::before {
+  content:'';
+  display: block;
+  height: 5px;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav .nav-link:hover::before {
+  width: 100%;
+}
+
+nav .nameheader:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 4px solid transparent;
+}
+
+nav .nameheader:hover:after {
+  animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+  0%{
+    width: 0;
+    height: 0;
+    border-top-color:#262626;
+    border-right-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+  }
+  50%{
+    width: 100%;
+    height: 0;
+    border-top-color:#262626;
+    border-right-color:#262626;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+  }
+  100%{
+    width: 100%;
+    height: 100%;
+    border-top-color:#262626;
+    border-right-color:#262626;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+  }
+}
+
+nav .nameheader:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 4px solid transparent;
+}
+
+nav .nameheader:hover:before {
+  animation: animate2 1s linear forwards;
+}
+
+@keyframes animate2 {
+  0%{
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:#262626;
+  }
+  50%{
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color:#262626;
+    border-left-color:#262626;
+  }
+  100%{
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color:#262626;
+    border-left-color:#262626;
+  }
+}
+/*
+==================
+Welcome Section
+==================
+*/
 #welcome-section {
+}
+#welcome-section p {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  padding-top: 10px;
+  text-align: center;
+  line-height: 50px;
+  word-spacing: 20px;
+  font-family: sans-serif;
+}
+.portfoliopic {
+  float: right;
+  width: 300px;
+  border: 1px solid black;
+  margin-right: 40px;
+  align-self: center;
+}
+/*
+===============
+About Section
+===============
+*/
+
+#about header{
+  clear: both;
+}
+#about p{
+  text-align: center;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: black;
+  opacity: .8;
+}
+/*
+===================
+Project Section
+===================
+*/
+#projects {
+  text-align: center;
+  clear: both;
+}
+#projects img{
+
+
+}
+
+/*
+===========
+Contact
+===========
+*/
+#contact{
   text-align: center;
 }
 
-
-.social-icons {
-  max-width: 50px;
-
-
+/*
+=========
+footer
+=========
+*/
+.footer{
+  text-align: center;
+  font-size: 11px;
+  margin-top: 30px;
 }
