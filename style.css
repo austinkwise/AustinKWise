@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1px;
+    font-size: 16px;
+
+}
+
+h1 {
+    font-size: 18px;
+}
+/*
+=============
+HEADER/NAV
+=============
+*/
+
+.navbar {
+    text-decoration: none;
+    width: 100%;
+    background-color: #777;
+    display: inline-block;
+    padding: 10px 0px;
+    color: #ecf0f1;
+    border-bottom: 3px solid #cd7f32;
+    font-size: 22px;
+}
+
+.navbar ul {
+    margin-top: 0px;
+}
+
+.navbar-aw li{
+    text-align: left;
+    float: left;
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+.navbar-links li {
+    text-align: right;
+    float: right;
+    list-style-type: none;
+    padding: 0px 12px;
+}
+
+/*
+=============
+WELCOME.
+=============
+*/
+
+.welcome {
+    background-color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.welcome h1 {
+    padding: 30px;
+    text-align: center;
+}
+
+.welcome h2 {
+    font-size: 16px;
+}
+
+/*
+=============
+WELCOME -BACKGROUND
+=============
+*/
+
+/*
+=============
+ABOUT.
+=============
+*/
+
+.about {
+    background-color: white;
+    text-align: center;
+}
+
+.about img {
+    width: 200px;
+    border-radius: 250px;
+}
+
+/*
+=============
+PROJECTS.
+=============
+*/
+
+.projects-container {
+    text-align: center;
+}
+
+/*
+=============
+BLOG.
+=============
+*/
+
+.blog-container {
+    text-align: center;
+}
+
+/*
+=============
+CONTACT.
+=============
+*/
+.contact-container {
+    background-color: #777;
+    text-align: center;
+    border-top: 3px solid #cd7f32;
+
+}
+
+.input-container .inputs {
+    width: 350px;
+    height: 16px;
+    clear: both;
+    color: #ecf0f1;
+    background-color: #333;
+    border: 0px solid black;
+    padding: 20px 20px;
+    margin: 2px 20px;
+    text-align: left;
+}
+
+.input-container textarea {
+    width: 350px;
+    height: 75px;
+    clear: both;
+    background-color: #333;
+    border: 0px solid black;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: left;
+    overflow: auto;
+    resize: none;
+}
+
+.input-container .submit {
+    background-color: #333;
+    color: white;
+    border: 0px;
+    width: 90px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+/*
+=============
+FOOTER
+=============
+*/
+
+.social-buttons img {
+    width: 40px;
+    padding: 10px 5px;
+}
+
+.social-invert {
+    filter: invert(100%);
+}
+.footer-container {
+    text-align: center;
+    font-size: 10px;
+    background-color: #222;
+    color: #ecf0f1;
+    height: 100%;
+    padding-top: 5px;
+}
